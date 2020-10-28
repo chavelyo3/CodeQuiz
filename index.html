@@ -14,7 +14,7 @@
 <body>
 
 <!--timer -->
-<div class="timer">Time: <span id="time">0</span></div>
+<div class="timer">Time: <span id="time">60</span></div>
   
 <h1 style="color: #362C23;"><center>Elephant Quiz Challenge</center></h1>
 <hr class="solid">  
@@ -22,45 +22,58 @@
 </div>
 <!-- colum-->
 
-  <div class="container">
+  <div class="container" id="startContainer">
     <div class="row">
     <div class="col-md-12">
 
       <div id="start-screen" class="start">
 Coding Quiz Challenge
 Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!<br><br>
-
 <button id="start">Start</button>
+        </div>
+    </div>
+    </div>
+  </div>
 
+  <!-- Question Column-->
+  <div class="container hide" id="questionColumn">
+    <div class="row">
+      <div class="col-md-12">
+        <h3 id="questions">QUESTION</h3>
+        <button id="choiceOne">TEST</button>
+        <button id="choiceTwo">TEST</button>
+        <button id="choiceThree">TEST</button>
+        <button id="choiceFour">TEST</button>
+      </div>
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+    </div>
 
  <!--view highscores-->
-      
- <div class="scores"><a href="highscores.html">View Highscores</a></div>
+    
+ <div class="scores"><a href="index.html">View Highscores</a></div>
 
 </div>
 </div>
 </div>
 
-<div id="return" class="return hide"></div>
-
-<div id="questions" class="hide">
-  <h2 id="question-title"></h2>
-  <div id="choices" class="choices"></div>
-</div>
-
-<div id="end-screen" class="hide">
-  <h2>You're all done!</h2>
-  <p>final score <span id="final-score"></span>.</p>
-  <p>
-    Enter initials: <input type="text" id="initials" max="3" />
-    <button id="submit">Submit</button>
-  </p>
-</div>
-</div>
-
+  <!-- Highscore column-->
+  <div class="container hide" id="HighScoreColumn">
+    <div id="end-sreen" class= "end"></div>
+    <div class="row">
+      <div class="col-md-12">
+        <h3>You're all done!</h3>
+        <p>Your final score is</p><span id="final-score"></span>
+        <p>Enter your initials:</p><input type="text" id="initials" max="3" />
+        <button id="submit">Submit</button>
+        
 
 <!-- files containing  questions for quiz-->
-<script src="Qs.js"></script>
+<!-- <script src="Qs.js"></script> -->
 <!-- javascript file-->
 <script src="script.js"></script>
 

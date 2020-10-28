@@ -37,6 +37,10 @@ body {
   text-align: center;
 }
 
+.hide {
+  display: none'
+}
+
 button, .scores {
   display: inline-block;
   margin: 5px;
