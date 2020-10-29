@@ -8,11 +8,11 @@ let startBtn = document.querySelector("#start");
 let submitBtn = document.getElementById("submit");
 let timerEl = document.getElementById("timer");
 let time = document.getElementById("time");
-let nameEl = document.getElementById("name");
-let returnEl = document.getElementById("return");
+let resultEnd = document.getElementById("result");
 let startContainer = document.getElementById("startContainer");
 let questionColumn = document.getElementById("questionColumn");
-let highScoreColumn = document.getElementById("highScoreColumn")
+let highScoreColumn = document.getElementById("highScoreColumn");
+
 
 let countdown = 60;
 let questions = [
@@ -48,10 +48,14 @@ let questions = [
 // }
 ];
 let currentQuestion = 0;
+let sndCorrect = new Audio("/Users/roxettechavely/Desktop/Homework/codequiz/assets/sound/correct.wav");
+let sndWrong = new Audio("/Users/roxettechavely/Desktop/Homework/codequiz/assets/sound/wrong.wav");
 
 function beginQuix() {
     startContainer.setAttribute("class", "hide");
     questionColumn.setAttribute("class", "container");
+    resultEnd.setAttribute("class", "result");
+   
   
   
     countdown = 60;
@@ -64,8 +68,12 @@ function questionChoices(){
     let previousAnswer = this.textContent
     if (currentQuestion != 0 ){
         if(previousAnswer == questions[currentQuestion-1].answer){
-            console.log("correct")
+           resultEnd.textContent = "correct!";
+            sndCorrect.play();
+           console.log("correct")
         } else {
+            resultEnd.textContent = "wrong!";
+            sndWrong.play();
             console.log("incorrect")
             countdown -= 10;
         }
@@ -77,6 +85,7 @@ function questionChoices(){
         choiceThree.textContent = questions[currentQuestion].choices[2];
         choiceFour.textContent = questions[currentQuestion].choices[3];
     }
+    // move to next question
     currentQuestion++;
 }
 function timerStart(){
@@ -85,8 +94,11 @@ function timerStart(){
         countdown--;
         if(countdown <=0 || currentQuestion > 5){
             clearInterval(interval)
-            questionColumn.setAttribute("class", "hide")
-            startContainer.setAttribute("class", "container")
+            questionColumn.setAttribute("class", "hide");
+            startContainer.setAttribute("class", "container");
+            resultEnd.setAttribute("class", "hide");
+            
+            
         
         }
     }, 1000)
