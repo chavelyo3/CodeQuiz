@@ -48,8 +48,8 @@ let questions = [
   },
 ];
 let currentQuestion = 0;
-let sndCorrect = new Audio("../codequiz/asset/correct.wav");
-let sndWrong = new Audio("../codequiz/asset/wrong.wav");
+let sndCorrect = new Audio("asset/correct.wav");
+let sndWrong = new Audio("asset/wrong.wav");
 
 function beginQuix() {
   startContainer.setAttribute("class", "hide");
