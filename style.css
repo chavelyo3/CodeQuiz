@@ -41,6 +41,15 @@ body {
   display: none'
 }
 
+.resultEnd {
+  font-style: italic;
+  font-size: 120%;
+  margin-top: 20px;
+  padding-top: 10px;
+  color: gray;
+  border-top: 2px solid #ccc;
+}
+
 button, .scores {
   display: inline-block;
   margin: 5px;
@@ -67,14 +76,6 @@ a {
   display: none;
 }
 
-li {
-  padding: 5px;
-  list-style: decimal inside none;
-}
-
-li:nth-child(odd) {
-  background-color: #f3edfc;
-}
 
 .scores {
   position: absolute;
