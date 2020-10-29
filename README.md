@@ -1,7 +1,8 @@
 This weeks homework we had to create a quiz
 <br><br><br>
-<img width="1783" alt="password generater" src="/Users/roxettechavely/Desktop/Homework/codequiz/asset/screenshot 1.png">
-<img width="1783" alt="password generater" src="/Users/roxettechavely/Desktop/Homework/codequiz/asset/Screen Shot 2020-10-29 at 2.21.35 AM.png>
+https://chavelyo3.github.io/CodeQuiz/<br>
+<img width="1783" alt="codequiz" src="/Users/roxettechavely/Desktop/Homework/codequiz/asset/screenshot 1.png">
+<img width="1783" alt="codequiz" src="/Users/roxettechavely/Desktop/Homework/codequiz/asset/Screen Shot 2020-10-29 at 2.21.35 AM.png>
 
 <br><br><br>
 <h1>How to use: </h1><br>
