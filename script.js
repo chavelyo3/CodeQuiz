@@ -12,7 +12,6 @@ let resultEnd = document.getElementById("result");
 let startContainer = document.getElementById("startContainer");
 let endContainer = document.getElementById("endContainer");
 let questionColumn = document.getElementById("questionColumn");
-let highScoreColumn = document.getElementById("highScoreColumn");
 let endScreen = document.getElementById("endscrn");
 
 let countdown = 60;
