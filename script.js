@@ -47,6 +47,7 @@ let questions = [
     answer: "18 hours",
   },
 ];
+
 let currentQuestion = 0;
 let sndCorrect = new Audio("asset/correct.wav");
 let sndWrong = new Audio("asset/wrong.wav");
